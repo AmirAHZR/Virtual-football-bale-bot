@@ -45,4 +45,4 @@ def load_clubs(filename) -> dict[str, Club]:
 
     return clubs
 
-clubs = load_clubs("top20_squads_persian.json")
+clubs = load_clubs("squads.json")
