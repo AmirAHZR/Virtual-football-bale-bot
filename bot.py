@@ -16,7 +16,7 @@ async def echo(message):
                 res = " \\\ ".join(ls)
                 t += f"\n"+res+"\n"
                 
-            t+="اگه می خوای تو ساخت بازی فوتبال مجازی با بات بله کمک کنی تو @Amir_AHZR در خدمتم"
+            t+="اگه می خوای تو ساخت بازی فوتبال مجازی با بات بله کمک کنی تو https://github.com/AmirAHZR/Virtual-football-bale-bot/tree/main در خدمتم"
             await message.reply(t)
             
     except:
