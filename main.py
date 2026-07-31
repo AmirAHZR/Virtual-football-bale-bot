@@ -11,9 +11,12 @@ class Player:
 
 
 class Club:
-    def __init__(self, name: str, players: List[Player] = None):
+    def __init__(self, fan:int,budget:int, name: str, players: List[Player] = None):
         self.name = name
+        self.fan = fan
+        self.budget = budget
         self.players = players if players else []
+        
 
     def get_players_by_position(self, post: str) -> List[str]:
         
@@ -31,7 +34,7 @@ def load_clubs(filename) -> dict[str, Club]:
             Player(name=p["نام"], post=p["پست"])
             for p in players_data
         ]
-        clubs[club_name] = Club(club_name, players)
+        clubs[club_name] = Club(100,500,club_name, players)
 
     return clubs
 
