@@ -7,8 +7,7 @@ class Player:
         self.name = name
         self.post = post
 
-    def __repr__(self):
-        return self.name
+    
 
 
 class Club:
@@ -20,15 +19,6 @@ class Club:
         
         return [p.name for p in self.players if post.lower() in p.post.lower()]
 
-    def show_squad(self):
-        print(f"\n{'='*40}")
-        print(f"  {self.name}")
-        print(f"{'='*40}")
-        for player in self.players:
-            print(player.name)
-
-    def __repr__(self):
-        return f"Club({self.name}, {len(self.players)} players)"
 
 
 def load_clubs(filename) -> dict[str, Club]:
