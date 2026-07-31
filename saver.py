@@ -1,4 +1,11 @@
 from main import clubs
 
+squads = {}
 
-print(clubs["بارسلونا"].players)
+for club in clubs:
+    club_name = clubs[club]
+    players = clubs[club].players
+    squads.update({club_name.name: players})
+
+print(squads)
+    

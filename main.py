@@ -11,9 +11,11 @@ class Player:
 
 
 class Club:
-    def __init__(self, name: str, players: List[Player] = None):
+    def __init__(self, fan_satisfaction, name: str, players: List[Player] = None, ):
         self.name = name
         self.players = players if players else []
+        self.budget = 500
+        self.fan_satisfaction = fan_satisfaction
 
     def get_players_by_position(self, post: str) -> List[str]:
         
