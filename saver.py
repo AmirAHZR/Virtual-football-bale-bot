@@ -1,11 +1,9 @@
-from main import clubs
 
-squads = {}
+from pickle import load
 
-for club in clubs:
-    club_name = clubs[club]
-    players = clubs[club].players
-    squads.update({club_name.name: players})
+with open("pkls/squads.pkl", "rb") as f:
+    squads = load(f)
 
 print(squads)
+
     
